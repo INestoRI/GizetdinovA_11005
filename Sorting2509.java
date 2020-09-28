@@ -16,9 +16,13 @@ public class Sorting2509 {
         }
         int n = 0;
         for (int i = 0; i < a; i++) {
-            for (int j = 0; j < a; j++) {
-                for (int k = j; k < a; k++) {
-                    
+            for (int j = i; j < a; j++) {
+                if (mas[0][i] < mas[0][j]) {
+                    for (int k = 0; k < a; k++) {
+                        n = mas[k][i];
+                        mas[k][i] = mas[k][j];
+                        mas[k][j] = n;
+                    }
                 }
             }
         }
