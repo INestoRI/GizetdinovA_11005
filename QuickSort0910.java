@@ -31,7 +31,7 @@ public class QuickSort0910 {
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter massive size: ");
+        System.out.print("Enter array size: ");
         int a = in.nextInt();
         int[] mas = new int[a];
         System.out.println("Array before: ");
