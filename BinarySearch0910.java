@@ -1,3 +1,4 @@
+//В отсортированном массиве найти элемент с помощью бинарного поиска
 import java.util.Scanner;
 public class BinarySearch0910 {
     public static int binarySearch(int[] sortedArray, int x, int left, int right) {
