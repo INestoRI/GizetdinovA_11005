@@ -34,7 +34,7 @@ public class QuickSort0910 {
         System.out.print("Enter massive size: ");
         int a = in.nextInt();
         int[] mas = new int[a];
-        System.out.println("Massive before: ");
+        System.out.println("Array before: ");
         for (int i = 0; i < a; i++) {
             mas[i] = ((int)(Math.random() * 50));
             System.out.print(mas[i] + " ");
@@ -42,7 +42,7 @@ public class QuickSort0910 {
         int left = 0;
         int right = mas.length - 1;
         quickSort(mas, left, right);
-        System.out.println("\nMassive after: ");
+        System.out.println("\nArray after: ");
         for (int i = 0; i < a; i++) {
             System.out.print(mas[i] + " ");
         }
