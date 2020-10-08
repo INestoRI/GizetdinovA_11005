@@ -1,14 +1,14 @@
 //Реализовать быструю сортировку
 import java.util.Scanner;
 public class QuickSort0910 {
-    public static void quickSort(int[] mas, int x, int y) {
+    public static void quickSort(int[] mas, int left, int right) {
         if (mas.length == 0)
             return;
-        if (x >= y)
+        if (left >= right)
             return;
-        int mid1 = x + (y - x) / 2;
+        int mid1 = left + (right - left) / 2;
         int mid2 = mas[mid1];
-        int i = x, j = y;
+        int i = left, j = right;
         while (i <= j) {
             while (mas[i] < mid2) {
                 i++;
@@ -24,10 +24,10 @@ public class QuickSort0910 {
                 j--;
             }
         }
-        if (x < j)
-            quickSort(mas, x, j);
-        if (y > i)
-            quickSort(mas, i, y);
+        if (left < j)
+            quickSort(mas, left, j);
+        if (right > i)
+            quickSort(mas, i, right);
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -39,9 +39,9 @@ public class QuickSort0910 {
             mas[i] = ((int)(Math.random() * 50));
             System.out.print(mas[i] + " ");
         }
-        int x = 0;
-        int y = mas.length - 1;
-        quickSort(mas, x, y);
+        int left = 0;
+        int right = mas.length - 1;
+        quickSort(mas, left, right);
         System.out.println("\nMassive after: ");
         for (int i = 0; i < a; i++) {
             System.out.print(mas[i] + " ");
