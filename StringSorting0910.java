@@ -25,14 +25,24 @@ public class StringSorting0910 {
             }
         }
         String z = " ";
+        int d;
         for (int i = 0; i < k; i++) {
-            for (int j = 0; j < k; j++) {
-                for (int r = 0; r < mas[0].length(); r++) {
-                    if (mas[i].charAt(r) < mas[j].charAt(r)) {
+            for (int j = i; j < k; j++) {
+                if (mas[i].length() > mas[j].length()) {
+                    d = mas[j].length();
+                } else {
+                    d = mas[i].length();
+                }
+                for (int r = 0; r < d; r++) {
+                    if (mas[i].charAt(r) > mas[j].charAt(r)) {
                         z = mas[i];
                         mas[i] = mas[j];
                         mas[j] = z;
                         break;
+                    } else if ((mas[i].length() > mas[j].length()) && (mas[i].charAt(r) == mas[j].charAt(r))) {
+                        z = mas[i];
+                        mas[i] = mas[j];
+                        mas[j] = z;
                     }
                 }
             }
