@@ -39,11 +39,14 @@ public class StringSorting0910 {
                         mas[i] = mas[j];
                         mas[j] = z;
                         break;
-                    } else if ((mas[i].length() > mas[j].length()) && (mas[i].charAt(r) == mas[j].charAt(r))) {
+                    } else if (mas[i].charAt(r) < mas[j].charAt(r)) {
+                        break;
+                    } else if (mas[i].length() > mas[j].length()) {
                         z = mas[i];
                         mas[i] = mas[j];
                         mas[j] = z;
                     }
+
                 }
             }
         }
