@@ -1,3 +1,4 @@
+//Написать метод, который принимает два массива и “склеивает” их
 import java.util.Scanner;
 public class Zadacha41610 {
 
