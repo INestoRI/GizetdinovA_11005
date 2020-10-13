@@ -1,5 +1,4 @@
 //Написать метод, который принимает на вход матрицу и транспонирует её
-import java.util.Arrays;
 import java.util.Scanner;
 public class Zadacha51610 {
 
