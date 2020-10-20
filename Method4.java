@@ -1,4 +1,4 @@
-//
+//Функция Аккермана
 import java.util.Scanner;
 public class Method4 {
 
