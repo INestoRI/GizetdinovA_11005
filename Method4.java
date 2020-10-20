@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Method4 {
 
     public static int func(int m, int n) {
+        if (m == 0)
+            return n + 1;
         if ((n == 0) && (m > 0))
             return func((m - 1), (1));
-        if ((m > 0) && (n > 0))
-            return func((m - 1), func(m, (n - 1)));
-        return n + 1;
+        return func((m - 1), func(m, (n - 1)));
     }
 
     public static void main(String[] args) {
