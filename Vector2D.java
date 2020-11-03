@@ -2,11 +2,12 @@ public class Vector2D {
     private double x;
     private double y;
 
-    public void setVec (double x, double y) {
-        this.x = x;
-        this.y = y;
+    Vector2D (double a, double b) {
+        x = a;
+        y = b;
     }
-    public void getVec() {
+
+    public void getVector2D() {
         System.out.println(this.x + " " + this.y);
     }
 
