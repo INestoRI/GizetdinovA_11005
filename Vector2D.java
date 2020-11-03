@@ -2,7 +2,7 @@ public class Vector2D {
     private double x;
     private double y;
 
-    Vector2D (double a, double b) {
+    public Vector2D (double a, double b) {
         x = a;
         y = b;
     }
