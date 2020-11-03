@@ -2,23 +2,23 @@ public class Vector2D {
     private double x;
     private double y;
 
-    public Vector2D (double a, double b) {
-        x = a;
-        y = b;
+    public Vector2D (double x, double y) {
+        this.x = x;
+        this.y = y;
     }
 
     public void printVector2D() {
         System.out.println(this.x + " " + this.y);
     }
 
-    public void setAdd (double a, double b) {
-        this.x += a;
-        this.y += b;
+    public void setAdd (double x, double y) {
+        this.x += x;
+        this.y += y;
     }
 
-    public void setSub (double a, double b) {
-        this.x -= a;
-        this.y -= b;
+    public void setSub (double x, double y) {
+        this.x -= x;
+        this.y -= y;
     }
 
     public void setMult (double a) {
