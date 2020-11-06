@@ -8,7 +8,7 @@ public class Main {
 
         vec.setSub(5, 9);
         vec.printVector2D();
-        
+
         vec.setMult(4);
         vec.printVector2D();
     }
