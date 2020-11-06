@@ -1,4 +1,4 @@
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
         Vector2D vec = new Vector2D(3, 5);
         vec.printVector2D();
