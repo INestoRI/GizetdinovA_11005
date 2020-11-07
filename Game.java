@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Game {
+public class Game extends Player {
+    public Game(String name) {
+        super(name);
+    }
 }
