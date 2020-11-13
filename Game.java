@@ -4,14 +4,20 @@ public class Game {
     Scanner sc = new Scanner(System.in);
     int impact;
     private int x = 1;
+    private Player p1;
+    private Player p2;
+
+    public Game (Player p1, Player p2) {
+        this.p1 = p1;
+        this.p2 = p2;
+    }
 
     public static int rnd() {
         int max = 10;
         max -= 1;
         return (int) (Math.random() * ++max) + 1;
     }
-
-    public Game (Player p1, Player p2) {
+    public void startGame() {
         System.out.println(p1.getName() + " your HP is 10\n" + p2.getName() + " your HP is 10");
         System.out.println("--------------- 1 Round ---------------");
         while (true) {
